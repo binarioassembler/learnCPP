@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sintaxis básica de un programa en C++</title>
+  <title>Constantes en C++</title>
   <link rel="stylesheet" href="../../css/style-pages.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
   <div class="wrapper">
     <section class="header-section">
       <div class="wrapp-head" id="box2">
-        <h1 class="title-banner">Sintaxis básica de un programa en C++</h1>
+        <h1 class="title-banner">Constantes en C++</h1>
         <div class="data-post">
           <p><span class="item-post">🙎‍♂️ Binario Assembler</span> <span class="item-post">📆 23/10/2024</span></p>
           <p><span class="item-post">📁 <a href="#">Programación</a>, <a href="#">C++</a></span> <span class="item-post">⌛ 10 min de lectura</span></p>
@@ -24,7 +24,7 @@
   </div>
   <section class="wrapp-indice">
     <div class="wrapper">
-      <p class="text-indice"><strong>&#9658; Conceptos básicos:</strong> Sintaxis básica de un programa en C++</p>
+      <p class="text-indice"><strong>&#9658; Variables y constantes:</strong> Constantes en C++</p>
     </div>
   </section>
 </header>
@@ -33,59 +33,37 @@
     <section class="content-main">
       <div class="w-main">
         <section class="subtopic">
-          <h2>Esquema base de un programa escrito en C++</h2>
-          <div class="multimedia-container">
-            <img class="img-multimedia" src="https://i.postimg.cc/28m43gLb/sintaxis-cpp.png" alt="Sintaxis base de C++">
-          </div>
-          <p><strong>Partes:</strong></p>
-          <ul class="text-main list-main">
-            <li><strong>using namespace:</strong> los espacios de nombre, se encargan de importar todas las definiciones de tipos
-              estándar.</li>
-            <li><strong>#include:</strong> es una directiva ubicado en la cabecera del scope, que le indica al procesador la
-              inclusión del contenido de una o varias bibliotecas de archivos.</li>
-            <li><strong>// comentarios:</strong> los comentarios muestran información adicional del programa, no contiene lógica
-              de programación.</li>
-            <li><strong>int main():</strong> es la función principal de todo programa de C++.</li>
-            <li><strong>cout &lt;&lt;:</strong> permite mostrar la salida de datos en pantalla seguiedo del símbolo '&lt; &lt;'.
-            </li>
-            <li><strong>return 0;:</strong> devuelve un valor resultante de una función.</li>
-          </ul>
-          <p><strong>Importante:</strong></p>
-          <ul class="text-main list-main">
-            <li>Incluir los archivos de encabezados como <code>&lt;iostream&gt;</code> para usar <code>std::cin</code> y
-              <code>std::cout</code>
-            </li>
-            <li>Toda ejecución de un programa en C++ empieza desde <code>main()</code>.</li>
-            <li>Es una buena practica identar el código que escribimos.</li>
-            <li><strong>cout</strong> imprime declaraciones y <strong>cin</strong> recibe entrada de datos.</li>
-          </ul>
+          <p class="text-main">Las constantes son valores que no pueden ser alternados una vez definidos. Son esenciales en la programación porque permite crear valores inmutables que mejoran la legibilidad y seguridad del código.</p>
+          <p class="text-main">Pueden ser cualquier tipo de dato como <code>int</code>, <code>char</code>, <code>string</code>, entre otros.</p>
         </section>
         <section class="subtopic">
-          <h2>Probando c++</h2>
+          <h2>¿Cómo definimos constantes en C++?</h2>
           <div class="multimedia-container">
-            <p class="text-main">Escribimos nuestro primer programa que imprima un mensaje de 'Hola mundo' en C++ mediante la
-              siguiente sintaxis.</p>
-            <div class="head-input">
-              <p><strong>Input:</strong></p>
-            </div>
-            <img class="img-multimedia" src="https://i.postimg.cc/QdLssHkQ/codebase.png" alt="Programa de Hola mundo en C++">
+            <img src="https://i.postimg.cc/QdLssHkQ/codebase.png" alt="Imágen de prueba" class="img-multimedia">
           </div>
-          <p class="text-main">Este es el resultado por consola del primer programa escrito en C++.</p>
-          <div class="multimedia-container">
-            <div class="output-container">
-              <div class="tab-out">
-                <span class="text-tab">🔳 Output</span>
-              </div>
-              <div class="body-out">
-                <pre><code>
-Hola mundo
-                </code></pre>
-              </div>
-              <div class="foot-out">
-                <p class="text-body">Proceso exitoso!</p>
-              </div>
-            </div>
-          </div>
+          <p>Existen tres formas de definir constantes:</p>
+          <ol class="list-order ol-alpha">
+            <li><strong>Constante con la palabra clave <code>const</code></strong>
+              <p class="text-main">La palabra clave <code>const</code> es una constante de tipado fuerte, una vez que una variable se declara como <code>'const'</code> su valor no puede ser modificado.</p>
+            </li>
+            <li><strong>Constante con la palabra clave <code>constexpr</code></strong>
+              <p class="text-main">Define expresiones constantes que pueden evaluarse en tiempo de compilación. Es usado para una mejor optimización, lo que signifca que todas las funciones y expresiones que utilizan este <strong>keyword</strong> debe ser también de tipo <code>'constexpr'</code>.</p>
+            </li>
+            <li><strong>Constante definido por el preprocesador <code>#include</code></strong>
+              <p class="text-main">Antes era común usar la directiva <code>#define</code> del preprocesador para definir constantes.</p>
+              <p class="text-main">Pero este método no es recomendable, porque tiene desventajas como la falta de control de tipo y la ausencia de ámbito (scope) definido.</p>
+            </li>
+          </ol>
+        </section>
+        <section class="subtopic">
+          <h2>Puntos importantes sobre las constantes</h2>
+          <ul class="list-main">
+            <li>Las constantes son variables con valor fijo.</li>
+            <li>Las constantes se deben inicializar al momento de declararlas y su valor no cambia.</li>
+            <li><code>'const'</code> y <code>'constexpr'</code> se pueden usar para definir constantes.</li>
+            <li><code>#define</code> se usa para definir una <strong>macro constante</strong>.</li>
+          </ul>
+          <p class="text-main">Las constantes son fundamentales, cada uno de los métodos vistos tiene su caso de uso y beneficio a la vez. La importancia de saber cuando y cómo usarlos dependerá del problema que se presente.</p>
         </section>
       </div>
     </section>
@@ -108,10 +86,10 @@ Hola mundo
         </div>
         <div class="links-themes">
           <div class="btn-theme btn-before">
-            <a href="#"><span class="item-btn">&#171; Antes</span>C++ vs C</a>
+            <a href="./09-variables-cpp.html"><span class="item-btn">&#171; Antes</span>Variable en C++</a>
           </div>
           <div class="btn-theme btn-after">
-            <a href="./07-tokens-cpp.html"><span class="item-btn">Siguiente &#187;</span>Tokens en C++</a>
+            <a href="./11-ambito-de-variables-scope-cpp.html"><span class="item-btn">Siguiente &#187;</span>Ámbito de las variables (scope)</a>
           </div>
         </div>
       </div>

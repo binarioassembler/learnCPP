@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sintaxis básica de un programa en C++</title>
+  <title>Ámbito de las variables (scope)</title>
   <link rel="stylesheet" href="../../css/style-pages.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
   <div class="wrapper">
     <section class="header-section">
       <div class="wrapp-head" id="box2">
-        <h1 class="title-banner">Sintaxis básica de un programa en C++</h1>
+        <h1 class="title-banner">Ámbito de las variables (scope)</h1>
         <div class="data-post">
           <p><span class="item-post">🙎‍♂️ Binario Assembler</span> <span class="item-post">📆 23/10/2024</span></p>
           <p><span class="item-post">📁 <a href="#">Programación</a>, <a href="#">C++</a></span> <span class="item-post">⌛ 10 min de lectura</span></p>
@@ -24,7 +24,7 @@
   </div>
   <section class="wrapp-indice">
     <div class="wrapper">
-      <p class="text-indice"><strong>&#9658; Conceptos básicos:</strong> Sintaxis básica de un programa en C++</p>
+      <p class="text-indice"><strong>&#9658; Variables y constantes:</strong> Ámbito de las variables (scope)</p>
     </div>
   </section>
 </header>
@@ -33,59 +33,33 @@
     <section class="content-main">
       <div class="w-main">
         <section class="subtopic">
-          <h2>Esquema base de un programa escrito en C++</h2>
-          <div class="multimedia-container">
-            <img class="img-multimedia" src="https://i.postimg.cc/28m43gLb/sintaxis-cpp.png" alt="Sintaxis base de C++">
-          </div>
-          <p><strong>Partes:</strong></p>
-          <ul class="text-main list-main">
-            <li><strong>using namespace:</strong> los espacios de nombre, se encargan de importar todas las definiciones de tipos
-              estándar.</li>
-            <li><strong>#include:</strong> es una directiva ubicado en la cabecera del scope, que le indica al procesador la
-              inclusión del contenido de una o varias bibliotecas de archivos.</li>
-            <li><strong>// comentarios:</strong> los comentarios muestran información adicional del programa, no contiene lógica
-              de programación.</li>
-            <li><strong>int main():</strong> es la función principal de todo programa de C++.</li>
-            <li><strong>cout &lt;&lt;:</strong> permite mostrar la salida de datos en pantalla seguiedo del símbolo '&lt; &lt;'.
-            </li>
-            <li><strong>return 0;:</strong> devuelve un valor resultante de una función.</li>
-          </ul>
-          <p><strong>Importante:</strong></p>
-          <ul class="text-main list-main">
-            <li>Incluir los archivos de encabezados como <code>&lt;iostream&gt;</code> para usar <code>std::cin</code> y
-              <code>std::cout</code>
-            </li>
-            <li>Toda ejecución de un programa en C++ empieza desde <code>main()</code>.</li>
-            <li>Es una buena practica identar el código que escribimos.</li>
-            <li><strong>cout</strong> imprime declaraciones y <strong>cin</strong> recibe entrada de datos.</li>
+          <p class="text-main">El <strong>scope</strong> es el alcance de una variable, define la región del programa donde puede ser usado. Comprender el ámbito de la variables evita cometer errores como la colisión de nombres o el uso indebido de memoria.</p>
+          <p class="text-main">Existen cuatro tipos de ámbitos de variables.</p>
+          <ul class="list-main">
+            <li><a href="#var-global">Variables globales</a></li>
+            <li><a href="#var-local">Variables locales</a></li>
+            <li><a href="#var-bloque">Variables de bloque</a></li>
+            <li><a href="#var-funcion">Variables de función</a></li>
           </ul>
         </section>
         <section class="subtopic">
-          <h2>Probando c++</h2>
-          <div class="multimedia-container">
-            <p class="text-main">Escribimos nuestro primer programa que imprima un mensaje de 'Hola mundo' en C++ mediante la
-              siguiente sintaxis.</p>
-            <div class="head-input">
-              <p><strong>Input:</strong></p>
-            </div>
-            <img class="img-multimedia" src="https://i.postimg.cc/QdLssHkQ/codebase.png" alt="Programa de Hola mundo en C++">
-          </div>
-          <p class="text-main">Este es el resultado por consola del primer programa escrito en C++.</p>
-          <div class="multimedia-container">
-            <div class="output-container">
-              <div class="tab-out">
-                <span class="text-tab">🔳 Output</span>
-              </div>
-              <div class="body-out">
-                <pre><code>
-Hola mundo
-                </code></pre>
-              </div>
-              <div class="foot-out">
-                <p class="text-body">Proceso exitoso!</p>
-              </div>
-            </div>
-          </div>
+          <h2 id="var-global">Variables de ámbito global</h2>
+          <p class="text-main">Son aquellas variables que se declaran fuera de todas las funciones. Son accesibles desde cualquier parte del programa, después de haber sido declarada.</p>
+        </section>
+        <section class="subtopic">
+          <h2 id="var-local">Variables de ámbito local</h2>
+          <p class="text-main">Son aquellas que se declaran dentro de un bloque de código, como en una función que está dentro de un par de llaves '{ }'. Son accesibles dentro de ese bloque específico, una vez sale del bloque dejan de existir y su memoria se libera.</p>
+        </section>
+        <section class="subtopic">
+          <h2 id="var-bloque">Variables de ámbito de bloque</h2>
+          <p class="text-main">Es una extensión de la variable de ámbito local, puede aplicarse de cualquier par de llaves '{ }', incluyendo bloques internos dentro de funciones.</p>
+        </section>
+        <section class="subtopic">
+          <h2 id="var-funcion">Variables de ámbito de función</h2>
+          <p class="text-main">Estas variables son declaradas dentro de una función. Dichas variables son locales a esa función y no son accesibles para otras funciones.</p>
+        </section>
+        <section class="subtopic">
+          <p class="text-main">El <strong>scope</strong> o alcance de las variables, es esencial para escribir programas correctos y eficientes en C++, permite gestionar la visibilidad y el tiempo de vida de nuestras variables, previniendo errores comunes y manteniendo una mejor organización en el código.</p>
         </section>
       </div>
     </section>
@@ -108,10 +82,10 @@ Hola mundo
         </div>
         <div class="links-themes">
           <div class="btn-theme btn-before">
-            <a href="#"><span class="item-btn">&#171; Antes</span>C++ vs C</a>
+            <a href="./10-constantes-cpp.html"><span class="item-btn">&#171; Antes</span>Constantes en C++</a>
           </div>
           <div class="btn-theme btn-after">
-            <a href="./07-tokens-cpp.html"><span class="item-btn">Siguiente &#187;</span>Tokens en C++</a>
+            <a href="./12-clases-almacenamiento-cpp.html"><span class="item-btn">Siguiente &#187;</span>Clases de almacenamiento en C++</a>
           </div>
         </div>
       </div>

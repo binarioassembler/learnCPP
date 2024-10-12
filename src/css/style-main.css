@@ -51,7 +51,6 @@ footer.footer-container {
 }
 
 header.header-container {
-  /*background: linear-gradient(to bottom, #1C1C33 0%, #2B0725 100%);*/
   border-bottom: 1px solid var(--color-secondary);
   background-color: var(--color-primary);
 }
@@ -206,6 +205,7 @@ div.wrapper-extra>div.wrapp-contex>div.container-extra>a.btn-extra:hover {
 h1.title-banner {
   color: var(--color-third);
   text-shadow: 4px 4px 6px var(--color-quaternary);
+  text-wrap: balance;
 }
 
 p.text-banner {

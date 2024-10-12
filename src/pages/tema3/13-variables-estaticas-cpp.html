@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sintaxis básica de un programa en C++</title>
+  <title>Variables estáticas en C++</title>
   <link rel="stylesheet" href="../../css/style-pages.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
   <div class="wrapper">
     <section class="header-section">
       <div class="wrapp-head" id="box2">
-        <h1 class="title-banner">Sintaxis básica de un programa en C++</h1>
+        <h1 class="title-banner">Variables estáticas en C++</h1>
         <div class="data-post">
           <p><span class="item-post">🙎‍♂️ Binario Assembler</span> <span class="item-post">📆 23/10/2024</span></p>
           <p><span class="item-post">📁 <a href="#">Programación</a>, <a href="#">C++</a></span> <span class="item-post">⌛ 10 min de lectura</span></p>
@@ -24,7 +24,7 @@
   </div>
   <section class="wrapp-indice">
     <div class="wrapper">
-      <p class="text-indice"><strong>&#9658; Conceptos básicos:</strong> Sintaxis básica de un programa en C++</p>
+      <p class="text-indice"><strong>&#9658; Variables y constantes:</strong> Variables estáticas en C++</p>
     </div>
   </section>
 </header>
@@ -33,59 +33,41 @@
     <section class="content-main">
       <div class="w-main">
         <section class="subtopic">
-          <h2>Esquema base de un programa escrito en C++</h2>
-          <div class="multimedia-container">
-            <img class="img-multimedia" src="https://i.postimg.cc/28m43gLb/sintaxis-cpp.png" alt="Sintaxis base de C++">
-          </div>
-          <p><strong>Partes:</strong></p>
-          <ul class="text-main list-main">
-            <li><strong>using namespace:</strong> los espacios de nombre, se encargan de importar todas las definiciones de tipos
-              estándar.</li>
-            <li><strong>#include:</strong> es una directiva ubicado en la cabecera del scope, que le indica al procesador la
-              inclusión del contenido de una o varias bibliotecas de archivos.</li>
-            <li><strong>// comentarios:</strong> los comentarios muestran información adicional del programa, no contiene lógica
-              de programación.</li>
-            <li><strong>int main():</strong> es la función principal de todo programa de C++.</li>
-            <li><strong>cout &lt;&lt;:</strong> permite mostrar la salida de datos en pantalla seguiedo del símbolo '&lt; &lt;'.
-            </li>
-            <li><strong>return 0;:</strong> devuelve un valor resultante de una función.</li>
-          </ul>
-          <p><strong>Importante:</strong></p>
-          <ul class="text-main list-main">
-            <li>Incluir los archivos de encabezados como <code>&lt;iostream&gt;</code> para usar <code>std::cin</code> y
-              <code>std::cout</code>
-            </li>
-            <li>Toda ejecución de un programa en C++ empieza desde <code>main()</code>.</li>
-            <li>Es una buena practica identar el código que escribimos.</li>
-            <li><strong>cout</strong> imprime declaraciones y <strong>cin</strong> recibe entrada de datos.</li>
-          </ul>
+          <p class="text-main">Las variables estáticas son definidas mediante el keyword <code>static</code>, es una variable que retiene su valor incluso después de que la función en la que ha sido definida haya terminado de ejecutarse. Es decir, las variables estáticas conservan su estado para futuras llamadas a la función.</p>
         </section>
         <section class="subtopic">
-          <h2>Probando c++</h2>
-          <div class="multimedia-container">
-            <p class="text-main">Escribimos nuestro primer programa que imprima un mensaje de 'Hola mundo' en C++ mediante la
-              siguiente sintaxis.</p>
-            <div class="head-input">
-              <p><strong>Input:</strong></p>
-            </div>
-            <img class="img-multimedia" src="https://i.postimg.cc/QdLssHkQ/codebase.png" alt="Programa de Hola mundo en C++">
-          </div>
-          <p class="text-main">Este es el resultado por consola del primer programa escrito en C++.</p>
-          <div class="multimedia-container">
-            <div class="output-container">
-              <div class="tab-out">
-                <span class="text-tab">🔳 Output</span>
-              </div>
-              <div class="body-out">
-                <pre><code>
-Hola mundo
-                </code></pre>
-              </div>
-              <div class="foot-out">
-                <p class="text-body">Proceso exitoso!</p>
-              </div>
-            </div>
-          </div>
+          <h2>Variables estáticas en una función</h2>
+          <p class="text-main">Cuando se declara una variable estática dentro de una función, su ámbito es local a esa función, pero su duración es la vida completa del programa.</p>
+          <p class="text-main">Lo que significa que la variable sigue con su valor actual incluso cuando la función no es llamada.</p>
+        </section>
+        <section class="subtopic">
+          <h2>Variables estáticas en una clase</h2>
+          <p class="text-main">Cuando se declara una variable estática dentro de una clase, pero fuera de cualquier función miembro, esa variable se comparte entre todas las instancias de la clase. Esta característica es usada en la variables estáticas en la Programación Orientada a Objetos (POO).</p>
+        </section>
+        <section class="subtopic">
+          <h2>Ventajas y desventajas de las variables estáticas</h2>
+          <table class="table-main">
+            <thead>
+              <tr>
+                <th>ventajas</th>
+                <th>desventajas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>El valor de los datos persiste ante las diversas llamadas a funciones.</td>
+                <td>Visibilidad global, esto hace que solo responda a llamadas de funciones.</td>
+              </tr>
+              <tr>
+                <td>La memoria es compartida debido a la gestión de recursos.</td>
+                <td>Puede consumir más memoria, si se hace un uso excesivo.</td>
+              </tr>
+              <tr>
+                <td>Tiene una inicialización única, ahorrando tiempo y recursos.</td>
+                <td>Tiende a tener dependencia de estados, las funciones que dependen de las variables estáticas pueden tener un comportamiento impredecible si no es manejado correctamente el estado de cada variable.</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
       </div>
     </section>
@@ -108,10 +90,10 @@ Hola mundo
         </div>
         <div class="links-themes">
           <div class="btn-theme btn-before">
-            <a href="#"><span class="item-btn">&#171; Antes</span>C++ vs C</a>
+            <a href="./12-clases-almacenamiento-cpp.html"><span class="item-btn">&#171; Antes</span>Clases de almacenamiento en C++</a>
           </div>
           <div class="btn-theme btn-after">
-            <a href="./07-tokens-cpp.html"><span class="item-btn">Siguiente &#187;</span>Tokens en C++</a>
+            <a href="#"><span class="item-btn">Siguiente &#187;</span>Tipos de datos en C++</a>
           </div>
         </div>
       </div>

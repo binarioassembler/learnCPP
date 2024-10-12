@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables en C++</title>
+  <link rel="stylesheet" href="../../css/style-pages.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header-container">
+  <div class="wrapper">
+    <section class="header-section">
+      <div class="wrapp-head" id="box2">
+        <h1 class="title-banner">Variables en C++</h1>
+        <div class="data-post">
+          <p><span class="item-post">🙎‍♂️ Binario Assembler</span> <span class="item-post">📆 23/10/2024</span></p>
+          <p><span class="item-post">📁 <a href="#">Programación</a>, <a href="#">C++</a></span> <span class="item-post">⌛ 10 min de lectura</span></p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="wrapp-indice">
+    <div class="wrapper">
+      <p class="text-indice"><strong>&#9658; Variables y constantes:</strong> Variables en C++</p>
+    </div>
+  </section>
+</header>
+<main class="main-container">
+  <div class="wrapper">
+    <section class="content-main">
+      <div class="w-main">
+        <p class="text-main">Una variable es un espacio de memoria que se usa para almacenar datos. Cada variable tiene un nombre único y un tipo de datos específico que determina el tamaño y el formato de la memoria.</p>
+        <section class="subtopic">
+          <h2>Características</h2>
+          <ul class="list-main">
+            <li>El valor de una variable se puede cambiar durante la ejecución del programa.</li>
+            <li>Una variable es solo un nombre dado a una ubicación en memoria, toda operación que vaya ha realizarse afectará la
+              ubicación de esa memoria.</li>
+            <li>Todas las variables deben declararse antes de su uso.</li>
+          </ul>
+        </section>
+        <section class="subtopic">
+          <h2>Declaración de variables</h2>
+          <p class="text-main">Para declarar una variable, se debe especificar el tipo de dato y el nombre de la variable de la
+            siguiente manera:</p>
+          <div class="multimedia-container">
+            <img src="https://i.postimg.cc/5tLcv1wM/declarar-variable.png" alt="Imágen de prueba" class="img-multimedia">
+            <ul class="list-main text-main">
+              <li><strong>Tipo de dato:</strong> en esta variable se pueden almacenar distintos tipos de datos.</li>
+              <li><strong>nombre de la variable:</strong> nombre dado a la variable.</li>
+              <li><strong>valor:</strong> es el valor inicial almacenado en la variable.</li>
+            </ul>
+          </div>
+        </section>
+        <section class="subtopic">
+          <h2>Inicialización de variables</h2>
+          <p class="text-main">Existen 2 formas para inciializar variables, el primero es asginando un valor inicial al momento de
+            declararla y la otra forma es declarando solo el nombre de la variable y luego inicializarlo más adelante en un
+            determinado punto del programa.</p>
+          <p><strong>Ejemplo:</strong></p>
+          <div class="multimedia-container">
+            <img src="https://i.postimg.cc/RFggJbbB/inicializacion-de-variables.png" alt="Imágen de prueba" class="img-multimedia">
+          </div>
+        </section>
+        <section class="subtopic">
+          <h2>Tipos de datos comunes</h2>
+          <p>En C++, existen varios tipos de datos que se pueden usar para declarar variables, las más usadas son:</p>
+          <ul class="list-main">
+            <li><strong><code>int:</code></strong> son datos de tipo número entero.</li>
+            <li><strong><code>float:</code></strong> son datos de tipo número de punto flotante simple.</li>
+            <li><strong><code>double:</code></strong> son datos de tipo número de punto flotante de precisión doble.</li>
+            <li><strong><code>char:</code></strong> son datos de tipo solo caracter.</li>
+            <li><strong><code>bool:</code></strong> son datos de tipo booleano <em>(true o false)</em>.</li>
+          </ul>
+          <div class="multimedia-container">
+            <div class="head-input">
+              <p><strong>Input:</strong></p>
+            </div>
+            <img class="img-multimedia" src="https://i.postimg.cc/7DdHt6C6/datos-comunes.png" alt="Imágen de prueba">
+          </div>
+          <div class="multimedia-container">
+            <div class="output-container">
+              <div class="tab-out">
+                <span class="text-tab">🔳 Output</span>
+              </div>
+              <div class="body-out">
+                <pre><code>
+Tu nombre es: Erick
+Tu edad es: 10
+Eres mayor de edad?:1
+Estado civil: S
+La temperatura promedio es: 36.5
+El costo de la bebida es $9.99
+                 </code></pre>
+              </div>
+              <div class="foot-out">
+                <p class="text-body">Proceso exitoso!</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="subtopic">
+          <h2>Tipos de variables</h2>
+          <p>Las variables se pueden clasificar en diferentes categorías basadas en su ámbito y tiempo de vida.</p>
+          <ol class="list-order ol-alpha">
+            <li><strong>Variables locales</strong>
+              <p class="text-main">Las variables locales son declaradas dentro de una función, que es un bloque delimitado por
+                llaves '{ }', o una estructura de control <em>(if, for, etc)</em>.</p>
+              <p>Estas variables solo son accesible dentro de su ámbito (scope) donde son declaradas. Su tiempo de vida empieza
+                cuando se ejecuta la variable y termina cuando se sale del bloque en el que fueron declaradas.</p>
+            </li>
+            <div class="multimedia-container">
+              <div class="head-input">
+                <p><strong>Input:</strong></p>
+              </div>
+              <img class="img-multimedia" src="https://i.postimg.cc/nhgrzZJJ/2-variables-locales.png" alt="Imágen de prueba">
+              <div class="head-input">
+                <p class="text-main">En este ejemplo todas la variables han sido declaradas en el <strong>scope</strong> de la función <code>main()</code>, quiere decir que todas las variables que tengamos dentro del cuerpo de <code>main()</code> solo será accedida por dicha función a eso nos referimos con variables locales.</p>
+                <p class="text-main">Su tiempo de vida termina cuando la función termine de ejecutar línea por línea cada sentencia.</p>
+              </div>
+            </div>
+            <div class="multimedia-container">
+              <div class="output-container">
+                <div class="tab-out">
+                  <span class="text-tab">🔳 Output</span>
+                </div>
+                <div class="body-out">
+                  <pre><code>
+Nombre: Pablo
+Edad: 17
+Sexo: M
+                  </code></pre>
+                </div>
+                <div class="foot-out">
+                  <p class="text-body">Proceso exitoso!</p>
+                </div>
+              </div>
+            </div>
+            <li><strong>Variables de instancia</strong>
+              <p class="text-main">Conocidas como variables de miembro no estáticos, son aquellas que se declaran dentro de una
+                clase pero fuera de cualquier <em>método</em>. Cada instancia u objeto de una clase tiene su propia copia de estas
+                variables.</p>
+              <p class="text-main">Su tiempo de vida está enlazado al tiempo de vida del objeto al que pertenece.</p>
+            </li>
+            <div class="multimedia-container">
+              <div class="head-input">
+                <p><strong>Input:</strong></p>
+              </div>
+              <img class="img-multimedia" src="https://i.postimg.cc/qRkTBZzr/2-varaible-instancia1.png" alt="Imágen de prueba">
+              <div class="head-input">
+                <p class="text-main">Creamos la clase Clock (Reloj) que dentro de su ámbito tendrá los siguientes atributos:</p>
+                <ul class="list-main">
+                  <li>color y shape como <code>string</code></li>
+                  <li>sound y pendulum como <code>bool</code></li>
+                </ul>
+                <p class="text-main">Los atributos de Clock son de tipo <code>string</code> (cadena de caracteres) y <code>bool</code> que solo puede tener un valor el de verdadero o falso.</p>
+                <p class="text-main">Así mismo, dentro de la misma clase, creamos dos métodos para Clock.</p>
+                <ul class="list-main">
+                  <li>El método <code><em>mostrarColor()</em></code></li>
+                  <li>El método <code><em>mostrarForma()</em></code></li>
+                </ul>
+                <p class="text-main">Estos métodos nos permite imprimir por consola los valores que vamos definir a nuestros objetos al momento de instanciarlas, podemos hacer varias copias de objetos con diferentes valores en sus atributos.</p>
+                <p class="text-main">Una vez terminada nuestra plantilla de la clase Clock, debemos dar valor a los atributos y hacer el llamado a los métodos a través de la <strong>intancia</strong>, para instanciar un objeto debemos llamarlo desde la función principal <code>main()</code>.</p>
+              </div>
+              <img class="img-multimedia" src="https://i.postimg.cc/D7Hw129V/2-variable-instancia2.png" alt="Imágen de prueba">
+              <div class="head-input">
+                <p class="text-main">En este caso creamos en nuestra función principal dos objetos uno se llama <code>dePared</code> y el otro <code>dePulsera</code> ambos son objetos instanciados de la clase Clock.</p>
+                <p class="text-main"><strong>Las variables de instancia</strong> son generadas mediante un punto (.) y son objetos que han sido instanciados de una clase padre. Para el caso del reloj <code>dePared</code> estamos instanciando después del punto sus atributos <strong>color</strong> y <strong>pendulum</strong>, de igual manera para el reloj <code>dePulsera</code> se está instanciando sus atributos <code>shape</code> y <code>sound</code>, esto nos permite tener un mejor control de datos mediante objetos.</p>
+                <p class="text-main">Lo mismo pasa cuando queremos llamar a un método la instancia sería <strong><em>objeto.método()</em></strong>, en este caso le pedimos al programa, que el reloj <code>dePared</code> ejecute el método <em>mostrarColor()</em> y el reloj <code>dePulsera</code> ejecute el método <em>mostrarForma()</em>, para al final tener el siguiente resultado por consola.</p>
+              </div>
+            </div>
+            <div class="multimedia-container">
+              <div class="output-container">
+                <div class="tab-out">
+                  <span class="text-tab">🔳 Output</span>
+                </div>
+                <div class="body-out">
+                  <pre><code>
+*** Variables de instancia ***
+RELOJ DE PARED
+Color del reloj: Azul
+Estado de sonido: 8
+
+RELOJ DE PULSERA
+Forma del reloj: circulo
+Estado de pendulo: 7
+                  </code></pre>
+                </div>
+                <div class="foot-out">
+                  <p class="text-body">Proceso exitoso!</p>
+                </div>
+              </div>
+              <div class="head-input">
+                <p class="text-main">Este modo de trabajar con <strong>clases, atributos y métodos</strong> se llama paradigma de Programación Orientada a Objetos, que es un concepto más avanzado de la programación y que lo veremos más adelante con mayor detenimiento.</p>
+              </div>
+            </div>
+            <li><strong>Variables estáticas</strong>
+              <p class="text-main">Una variable de tipo <strong>static</strong> es un miembro estático de una clase. Es decir, que
+                este tipo de variable es compartida por todas las instancias de la clase.</p>
+              <p class="text-main">Por otro lado, una variable <strong>static</strong> local dentro de una función mantiene su valor entre llamadas a funciones. Veamos un caso sencillo de una variable estática local.</p>
+              <p class="text-main">Tenemos el salario de un empleado que es de 2000 USD y hay una regla en la empresa que decreta que el trabajador tendrá un aumento de salario cada 5 años. Dicho aumento se calcula con el <strong>incremento inicial</strong> del 2% y cada cinco años este incremento deberá duplicarse por lo que el aumento mantendrá su valor cada vez que se actualice a fin de que el salario del empleado vaya incrementándose cada cinco años, entonces es importante que tengamos una variable de tipo <strong>static</strong> para que el valor del incremento se mantenga al igual que el salario actual. Dicho esto, para que nuestro programa tenga una estructura organizada sería recomendable trabajar con una función aparte del <code>main()</code>, que solo se encargue de hacer el calculo del aumento de salario cada cinco años.</p>
+              <p class="text-main">Esta función la llamaremos <code><em>augment()</em></code>, dicho subproceso se encargará del trabajo pesado, mientras que cuando querramos ver el resumen del aumento de salario de un empleado cada 5 años, lo haremos llamándolo desde la función <code>main()</code>.</p>
+            </li>
+            <div class="multimedia-container">
+              <div class="head-input">
+                <p><strong>Input:</strong></p>
+              </div>
+              <img class="img-multimedia" src="https://i.postimg.cc/VvgBQv21/2-variable-static.png" alt="Imágen de prueba">
+              <div class="head-input">
+                <p class="text-main">En la función <code>augment()</code>, hemos creado tres varaibles de tipo <code>static</code> con los siguientes valores iniciales:</p>
+                <ul class="list-main">
+                  <li>increase = 0.02</li>
+                  <li>newSalary = 2000</li>
+                  <li>year = 2000</li>
+                </ul>
+                <p class="text-main">Esto quiere decir que sus valores se mantendrá y no se reiniciarán. Entonces, dentro del cuerpo de dicha función duplicaremos la variable <code>increase</code> y le sumaremos 5 años a la variable <code>year</code>, esto hará que cada vez que hagamos un llamado a la función <code>augment()</code> sus variables locales de tipo <code>static</code> actualizarán su valor.</p>
+                <p class="text-main">Hacemos el llamado tres veces a la función <code><em>augment()</em></code> para obtener el siguiente resultado.</p>
+              </div>
+            </div>
+            <div class="multimedia-container">
+              <div class="output-container">
+                <div class="tab-out">
+                  <span class="text-tab">🔳 Output</span>
+                </div>
+                <div class="body-out">
+                  <pre><code>
+*** Variables static ***
+AÑO: 2005
+SALARIO INICIAL: $2000
+SALARIO ACTUAL: $2080
+
+AÑO: 2010
+SALARIO INICIAL: $2000
+SALARIO ACTUAL: $2246.4
+
+AÑO: 2015
+SALARIO INICIAL: $2000
+SALARIO ACTUAL: $2605.82
+                  </code></pre>
+                </div>
+                <div class="foot-out">
+                  <p class="text-body">Proceso exitoso!</p>
+                </div>
+              </div>
+            </div>
+          </ol>
+          <p class="text-main">Comprender los diferentes tipos de variables y sus casos de uso, es fundametal para programar en
+            C++. Cada tipo de dato y categoría se utiliza en diferentes contextos, está en manos del programador saber donde debe
+            aplicar cada una de estas características cuando se presenta un problema en específico.</p>
+        </section>
+        <div class="box-note" id="box-info">
+          <p class="text-note"><strong class="text-note">Importante:</strong> Acerca de los tipos de variables locales, de instancia y estáticas tendremos un apartado más detallado en las próximas lecciones.</p>
+        </div>
+      </div>
+    </section>
+    <section class="about-post">
+      <div class="w-post">
+        <div class="data-post-autor">
+          <div class="image-author">
+            <img class="img-author" src="../../media/img/general/logo-terciario.webp" alt="Imagen del autor">
+          </div>
+          <div class="data-author">
+            <p class="data-text"><strong>Publicado por:</strong> <a href="#">Binario Assembler</a></p>
+            <p class="data-text">Programador profesional, especialista en Backend y Frontend.</p>
+            <div class="social-share">
+              <h3 class="title-posting">Comparte este post</h3>
+              <a href="#"><span><img src="../../media/img/general/telegram.png" alt="Telegram social"></span></a>
+              <a href="#"><span><img src="../../media/img/general/youtube.png" alt="Telegram social"></span></a>
+              <a href="#"><span><img src="../../media/img/general/instagram.png" alt="Telegram social"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="links-themes">
+          <div class="btn-theme btn-before">
+            <a href="../tema2/08-keywords-cpp.html"><span class="item-btn">&#171; Antes</span>Keywords en C++</a>
+          </div>
+          <div class="btn-theme btn-after">
+            <a href="./10-constantes-cpp.html"><span class="item-btn">Siguiente &#187;</span>Constantes en C++</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="content-extra">
+    <div class="wrapper-extra">
+      <div class="wrapp-contex">
+        <h2 class="title-extra">¡Este verano estudia con nosotros!</h2>
+        <p class="text-extra">Te enviaremos publicaciones con consejos útiles y múltiples recursos para que sigas
+          aprendiendo.</p>
+        <div class="container-extra">
+          <a class="btn-extra" href="#">Suscríbete</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+  <footer class="footer-container">
+    <div class="foot-top">
+      <div class="foot-img">
+        <a href="../../../index.html"><img src="../../media/img/general/profile.png" alt="Logo"></a>
+      </div>
+      <div class="foot-head">
+        <p class="foot-text">En BA nos dedicamos a enseñarte tecnologías actuales de desarrollo web para ayudarte a crear
+          tus proyectos de una forma más eficiente.</p>
+      </div>
+    </div>
+    <div class="foot-center">
+      <a class="btn-social" href="#"><img src="../../media/img/general/telegram.png" alt="Social Media"></a>
+      <a class="btn-social" href="#"><img src="../../media/img/general/instagram.png" alt="Social Media"></a>
+      <a class="btn-social" href="#"><img src="../../media/img/general/tiktok.png" alt="Social Media"></a>
+      <a class="btn-social" href="#"><img src="../../media/img/general/twitter.png" alt="Social Media"></a>
+      <a class="btn-social" href="#"><img src="../../media/img/general/youtube.png" alt="Social Media"></a>
+    </div>
+    <div class="foot-bottom">
+      <div class="wrapp-legal">
+        <h4 class="foot-title">BinarioAssembler <img src="../../media/img/general/logo-terciario.webp" alt="Logo">
+          Derechos reservados 2024</h4>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

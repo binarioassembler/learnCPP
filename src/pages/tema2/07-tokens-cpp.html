@@ -31,279 +31,293 @@
 <main class="main-container">
   <div class="wrapper">
     <section class="content-main">
-      <p>Los tokens en C++ son pequeños bloques de construcción que comprende el compilador. Los tipos de tokens tienen el propósito de dar una mejor sintaxis y semántica al momento que estamos programando, el uso de tokens son los siguientes:</p>
-      <div class="multimedia-container">
-        <img class="img-multimedia" src="https://media.geeksforgeeks.org/wp-content/uploads/20230808152244/Tokens-in-C.png" alt="Tokens en C++">
-      </div>
-      <ol class="list-order">
-        <li><strong>Identificadores</strong>
-          <p class="text-main">Los identificadores son las variables, funciones, clases o estructuras que son asignadas con un nombre único dentro del programa.</p>
-          <p class="text-main">Los identificadores son las variables, funcHay que tomar en cuenta que los <strong>keywords</strong> (palabras claves) no pueden ser usados como identificadores porque en C++ dichas palabras ya tienen reservada una serie de funciones que cumplen al momento de ser llamadas.</p>
-          <table class="table-main">
-            <thead>
-              <tr>
-                <th>Indentificadores válidos</th>
-                <th>Identificadores no válidos</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>nombre</td>
-                <td>#nombre (los identificadores no poseen caracteres especiales a excepsión del "_").</td>
-              </tr>
-              <tr>
-                <td>Numero89</td>
-                <td>2num (no puede empezar con un número).</td>
-              </tr>
-              <tr>
-                <td>primer_nombre</td>
-                <td>primer nombre (no debe tener espacios).</td>
-              </tr>
-              <tr>
-                <td>_segundo_nombre_</td>
-                <td>string (esta es una palabra reservada de C++ y no puede ser usada como identificador).</td>
-              </tr>
-            </tbody>
-          </table>
-        </li>
-        <li><strong>Keywords</strong>
-          <p class="text-main">Las palabras claves en C++, son palabras reservadas que tienen una funcionalidad específica dentro de un programa, estas no pueden usarse como identificador. Hay un total de 95 palabras claves en el lenguaje de C++, algunas son:</p>
-          <table class="table-main">
-            <tbody>
-              <tr>
-                <td><code class="keywords">class</code></td>
-                <td><code class="keywords">const</code></td>
-                <td><code class="keywords">continue</code></td>
-              </tr>
-              <tr>
-                <td><code class="keywords">break</code></td>
-                <td><code class="keywords">try</code></td>
-                <td><code class="keywords">catch</code></td>
-              </tr>
-              <tr>
-                <td><code class="keywords">char</code></td>
-                <td><code class="keywords">default</code></td>
-                <td><code class="keywords">delete</code></td>
-              </tr>
-              <tr>
-                <td><code class="keywords">auto</code></td>
-                <td><code class="keywords">else</code></td>
-                <td><code class="keywords">void</code></td>
-              </tr>
-              <tr>
-                <td><code class="keywords">for</code></td>
-                <td><code class="keywords">float</code></td>
-                <td><code class="keywords">long</code></td>
-              </tr>
-              <tr>
-                <td><code class="keywords">new</code></td>
-                <td><code class="keywords">operator</code></td>
-                <td><code class="keywords">private</code></td>
-              </tr>
-              <tr>
-                <td><code class="keywords">protected</code></td>
-                <td><code class="keywords">public</code></td>
-                <td><code class="keywords">return</code></td>
-              </tr>
-              <tr>
-                <td><code class="keywords">short</code></td>
-                <td><code class="keywords">sizeof</code></td>
-                <td><code class="keywords">static</code></td>
-              </tr>
-              <tr>
-                <td><code class="keywords">typedef</code></td>
-                <td><code class="keywords">enum</code></td>
-                <td><code class="keywords">throw</code></td>
-              </tr>
-              <tr>
-                <td><code class="keywords">this</code></td>
-                <td><code class="keywords">struct</code></td>
-                <td><code class="keywords">case</code></td>
-              </tr>
-              <tr>
-                <td><code class="keywords">mutable</code></td>
-                <td><code class="keywords">register</code></td>
-                <td><code class="keywords">switch</code></td>
-              </tr>
-              <tr>
-                <td><code class="keywords">and</code></td>
-                <td><code class="keywords">or</code></td>
-                <td><code class="keywords">namespace</code></td>
-              </tr>
-              <tr>
-                <td><code class="keywords">static_cast</code></td>
-                <td><code class="keywords">goto</code></td>
-                <td><code class="keywords">not</code></td>
-              </tr>
-              <tr>
-                <td><code class="keywords">xor</code></td>
-                <td><code class="keywords">bool</code></td>
-                <td><code class="keywords">do</code></td>
-              </tr>
-              <tr>
-                <td><code class="keywords">double</code></td>
-                <td><code class="keywords">int</code></td>
-                <td><code class="keywords">while</code></td>
-              </tr>
-              <tr>
-                <td><code class="keywords">unsigned</code></td>
-                <td><code class="keywords">virtual</code></td>
-                <td><code class="keywords">union</code></td>
-              </tr>
-            </tbody>
-          </table>
-        </li>
-        <li><strong>Constantes</strong>
-          <p class="text-main">Las constantes son definidas a prinicpio del programa y su valor asignado no cambia. Las constantes se pueden definir de dos maneras</p>
-          <ul>
-            <li>Usando la palabra reservada <code>const</code></li>
-            <li>Usando la directiva <code>#define</code></li>
-          </ul>
-        </li>
-        <li><strong>Strings</strong>
-          <p class="text-main">Representa una secuencia de caracteres, que sa su vez representa una cadena de tecto. Existen variosmétodos para la palabra reservada <code>string</code> como <code><em>lenght()</em></code>, <code><em>push_back()</em></code> y <code><em>pop_back</em></code>.</p>
-        </li>
-        <li><strong>Símbolos especiales</strong>
-          <p>Son caracteres simbólicos que tienen significados específicos, los más comunes son:</p>
-          <table class="table-main">
-            <thead>
-              <tr>
-                <th>Símbolo</th>
-                <th>Descripción</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>;</td>
-                <td>finaliza cualquier declaración.</td>
-              </tr>
-              <tr>
-                <td>[]</td>
-                <td>almacena elementos de un array.</td>
-              </tr>
-              <tr>
-                <td>{}</td>
-                <td>define bloques de código.</td>
-              </tr>
-              <tr>
-                <td>::</td>
-                <td>es un operador de resolución de alcance, permite acceder a miembros como <code>namespace</code>, <code>class</code>, entre otros.</td>
-              </tr>
-              <tr>
-                <td>.</td>
-                <td>operador de acceso a miembros como clases y estructuras.</td>
-              </tr>
-              <tr>
-                <td>=</td>
-                <td>asigna valores a una variable o constante.</td>
-              </tr>
-              <tr>
-                <td>""</td>
-                <td>encierra una cadena de texto.</td>
-              </tr>
-              <tr>
-                <td>''</td>
-                <td>encierra un caracter de texto.</td>
-              </tr>
-            </tbody>
-          </table>
-        </li>
-        <li><strong>Operadores</strong>
-          <p>Realizan operaciones con operandos como variables, constantes o expresiones.</p>
-          <p><strong>Tipos de operadores</strong></p>
-          <ul>
-            <li><strong>Operadores unarios:</strong> operan con un solo operando.
-              <table class="table-main">
-                <thead>
-                  <tr>
-                    <th>Tipo</th>
-                    <th>Símbolos</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Operador de incremento (++)</td>
-                    <td>incrementa en 1 su valor.</td>
-                  </tr>
-                  <tr>
-                    <td>Operador de decremento (--)</td>
-                    <td>decrementa en -1 su valor.</td>
-                  </tr>
-                </tbody>
-              </table>
-            </li>
-            <li><strong>Operadores binarios:</strong> realizan operaciones entre dos operandos.
-              <table class="table-main">
-                <thead>
-                  <tr>
-                    <th>Tipo</th>
-                    <th>Símbolo</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Operadores aritméticos</td>
-                    <td>+, -, *, /, %</td>
-                  </tr>
-                  <tr>
-                    <td>Operadores de comparación</td>
-                    <td>==, !=, &lt;, &gt;, &lt;=, &gt;=</td>
-                  </tr>
-                  <tr>
-                    <td>Operadores Lógicos</td>
-                    <td>&&, ||, !</td>
-                  </tr>
-                  <tr>
-                    <td>Operadores de asignación</td>
-                    <td>-=, *=, /=, +=, %=</td>
-                  </tr>
-                  <tr>
-                    <td>Operadores bit a bit</td>
-                    <td>&, |, ^, ~, &lt;&lt;, &gt;&gt;</td>
-                  </tr>
-                </tbody>
-              </table>
-            </li>
-            <li><strong>Operadore ternario:</strong> conocido como el operador condicional por usar expresiones condicioanles. Trabaja con tres expresiones; el primero es la condición si la condición es verdadera ejecutará la Expresión 2, caso contrario ejecutará la Expresión 3.</li>
-          </ul>
-        </li>
-      </ol>
-      <div class="multimedia-container">
-        <div class="output-container">
-          <div class="tab-out">
-            <span class="text-tab">🔳 Output</span>
-          </div>
-          <div class="body-out">
-            <p class="text-body">Hola mundo</p>
-          </div>
-          <div class="foot-out">
-            <p class="text-body">Proceso exitoso!</p>
-          </div>
+      <div class="w-main">
+        <div class="box-note" id="box-info">
+          <p class="text-note"><strong class="text-note">Importante:</strong> Esta lección solo es teórico, a media que vamos  avanzado con las lecciones veremos casos de uso de las diferentes características del lenguaje C++. Así que, tranquilo y continua aprendiendo.</p>
         </div>
+        <section class="subtopic">
+          <h2>¿Qué son los tokens?</h2>
+          <p class="text-main">Los tokens en C++ son pequeños bloques o piezas que unidas construyen un ecosistema para el
+            desarrollo de un programa que solo comprende el compilador. Tienen el propósito de dar una mejor sintaxis y semántica
+            al momento que estamos programando.</p>
+          <div class="multimedia-container">
+            <img class="img-multimedia" src="https://media.geeksforgeeks.org/wp-content/uploads/20230808152244/Tokens-in-C.png"
+              alt="Tokens en C++">
+          </div>
+          <ol class="list-order">
+            <li><strong>Identificadores</strong>
+              <p class="text-main">Los identificadores son las variables, las funciones, las clases o estructuras que son
+                asignadas con un nombre único dentro del programa.</p>
+              <p class="text-main">Hay que tomar en cuenta que los <strong>keywords</strong> (palabras claves) no pueden ser
+                usados como identificadores porque en C++ dichas palabras ya están reservadas para que cumplan una serie de
+                funciones al momento de ser invocadas.</p>
+              <table class="table-main">
+                <thead>
+                  <tr>
+                    <th>Indentificadores válidos</th>
+                    <th>Identificadores no válidos</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>nombre</td>
+                    <td>#nombre (los identificadores no poseen caracteres especiales a excepsión del "_").</td>
+                  </tr>
+                  <tr>
+                    <td>Numero89</td>
+                    <td>2num (no puede empezar con un número).</td>
+                  </tr>
+                  <tr>
+                    <td>primer_nombre</td>
+                    <td>primer nombre (no debe tener espacios).</td>
+                  </tr>
+                  <tr>
+                    <td>_segundo_nombre_</td>
+                    <td>string (esta es una palabra reservada de C++ y no puede ser usada como identificador).</td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li><strong>Keywords</strong>
+              <p class="text-main">Las palabras claves en C++, son palabras reservadas que tienen una funcionalidad específica
+                dentro de un programa, estas no pueden usarse como identificador. Hay un total de 95 palabras claves en el
+                lenguaje de C++, las más conocidas son:</p>
+              <table class="table-main">
+                <tbody>
+                  <tr>
+                    <td><code class="keywords">class</code></td>
+                    <td><code class="keywords">const</code></td>
+                    <td><code class="keywords">continue</code></td>
+                  </tr>
+                  <tr>
+                    <td><code class="keywords">break</code></td>
+                    <td><code class="keywords">try</code></td>
+                    <td><code class="keywords">catch</code></td>
+                  </tr>
+                  <tr>
+                    <td><code class="keywords">char</code></td>
+                    <td><code class="keywords">default</code></td>
+                    <td><code class="keywords">delete</code></td>
+                  </tr>
+                  <tr>
+                    <td><code class="keywords">auto</code></td>
+                    <td><code class="keywords">else</code></td>
+                    <td><code class="keywords">void</code></td>
+                  </tr>
+                  <tr>
+                    <td><code class="keywords">for</code></td>
+                    <td><code class="keywords">float</code></td>
+                    <td><code class="keywords">long</code></td>
+                  </tr>
+                  <tr>
+                    <td><code class="keywords">new</code></td>
+                    <td><code class="keywords">operator</code></td>
+                    <td><code class="keywords">private</code></td>
+                  </tr>
+                  <tr>
+                    <td><code class="keywords">protected</code></td>
+                    <td><code class="keywords">public</code></td>
+                    <td><code class="keywords">return</code></td>
+                  </tr>
+                  <tr>
+                    <td><code class="keywords">short</code></td>
+                    <td><code class="keywords">sizeof</code></td>
+                    <td><code class="keywords">static</code></td>
+                  </tr>
+                  <tr>
+                    <td><code class="keywords">typedef</code></td>
+                    <td><code class="keywords">enum</code></td>
+                    <td><code class="keywords">throw</code></td>
+                  </tr>
+                  <tr>
+                    <td><code class="keywords">this</code></td>
+                    <td><code class="keywords">struct</code></td>
+                    <td><code class="keywords">case</code></td>
+                  </tr>
+                  <tr>
+                    <td><code class="keywords">mutable</code></td>
+                    <td><code class="keywords">register</code></td>
+                    <td><code class="keywords">switch</code></td>
+                  </tr>
+                  <tr>
+                    <td><code class="keywords">and</code></td>
+                    <td><code class="keywords">or</code></td>
+                    <td><code class="keywords">namespace</code></td>
+                  </tr>
+                  <tr>
+                    <td><code class="keywords">static_cast</code></td>
+                    <td><code class="keywords">goto</code></td>
+                    <td><code class="keywords">not</code></td>
+                  </tr>
+                  <tr>
+                    <td><code class="keywords">xor</code></td>
+                    <td><code class="keywords">bool</code></td>
+                    <td><code class="keywords">do</code></td>
+                  </tr>
+                  <tr>
+                    <td><code class="keywords">double</code></td>
+                    <td><code class="keywords">int</code></td>
+                    <td><code class="keywords">while</code></td>
+                  </tr>
+                  <tr>
+                    <td><code class="keywords">unsigned</code></td>
+                    <td><code class="keywords">virtual</code></td>
+                    <td><code class="keywords">union</code></td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li><strong>Constantes</strong>
+              <p class="text-main">Las constantes son definidas a prinicpio del programa y su valor asignado no cambia. Las
+                constantes se pueden definir de dos maneras</p>
+              <ul>
+                <li>Usando la palabra reservada <code>const</code></li>
+                <li>Usando la directiva <code>#define</code></li>
+              </ul>
+            </li>
+            <li><strong>Strings</strong>
+              <p class="text-main">Representa una secuencia de caracteres, que sa su vez representa una cadena de texto. Existen
+                varios métodos para la palabra reservada <code>string</code> como <code><em>lenght()</em></code>,
+                <code><em>push_back()</em></code> o <code><em>pop_back</em></code>, etc.
+              </p>
+            </li>
+            <li><strong>Símbolos especiales</strong>
+              <p>Son caracteres simbólicos que tienen significados específicos, los más comunes son:</p>
+              <table class="table-main">
+                <thead>
+                  <tr>
+                    <th>Símbolo</th>
+                    <th>Descripción</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>;</td>
+                    <td>finaliza cualquier declaración.</td>
+                  </tr>
+                  <tr>
+                    <td>[ ]</td>
+                    <td>almacena elementos de un array.</td>
+                  </tr>
+                  <tr>
+                    <td>{ }</td>
+                    <td>define bloques de código.</td>
+                  </tr>
+                  <tr>
+                    <td>: :</td>
+                    <td>es un operador de resolución de alcance, permite acceder a miembros como <code>namespace</code>,
+                      <code>class</code>, entre otros.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>.</td>
+                    <td>operador de acceso a miembros como clases y estructuras.</td>
+                  </tr>
+                  <tr>
+                    <td>=</td>
+                    <td>asigna valores a una variable o constante.</td>
+                  </tr>
+                  <tr>
+                    <td>" "</td>
+                    <td>encierra una cadena de texto.</td>
+                  </tr>
+                  <tr>
+                    <td>' '</td>
+                    <td>encierra un caracter de texto.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li><strong>Operadores</strong>
+              <p>Realizan operaciones con operandos como variables, constantes o expresiones.</p>
+              <p><strong>Tipos de operadores</strong></p>
+              <ul>
+                <li><strong>Operadores unarios:</strong> operan con un solo operando.
+                  <table class="table-main">
+                    <thead>
+                      <tr>
+                        <th>Tipo</th>
+                        <th>descripción</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Operador de incremento (++)</td>
+                        <td>incrementa en 1 su valor.</td>
+                      </tr>
+                      <tr>
+                        <td>Operador de decremento (--)</td>
+                        <td>decrementa en -1 su valor.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </li>
+                <li><strong>Operadores binarios:</strong> realizan operaciones entre dos operandos.
+                  <table class="table-main">
+                    <thead>
+                      <tr>
+                        <th>Tipo</th>
+                        <th>Símbolo</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Operadores aritméticos</td>
+                        <td>+, -, *, /, %</td>
+                      </tr>
+                      <tr>
+                        <td>Operadores de comparación</td>
+                        <td>==, !=, &lt;, &gt;, &lt;=, &gt;=</td>
+                      </tr>
+                      <tr>
+                        <td>Operadores Lógicos</td>
+                        <td>&&, ||, !</td>
+                      </tr>
+                      <tr>
+                        <td>Operadores de asignación</td>
+                        <td>-=, *=, /=, +=, %=</td>
+                      </tr>
+                      <tr>
+                        <td>Operadores bit a bit</td>
+                        <td>&, |, ^, ~, &lt;&lt;, &gt;&gt;</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </li>
+                <li><strong>Operador ternario:</strong> conocido como el operador condicional por usar expresiones condicioanles y
+                  trabaja con tres expresiones. La 'Expresión 1' es la condición, si la condición es verdadera ejecutará la
+                  'Expresión 2', caso contrario ejecutará la 'Expresión 3'.</li>
+              </ul>
+            </li>
+          </ol>
+        </section>
       </div>
     </section>
     <section class="about-post">
-      <div class="data-post-autor">
-        <div class="image-author">
-          <img class="img-author" src="../../media/img/general/logo-terciario.webp" alt="Imagen del autor">
-        </div>
-        <div class="data-author">
-          <p class="data-text"><strong>Publicado por:</strong> <a href="#">Binario Assembler</a></p>
-          <p class="data-text">Programador profesional, especialista en Backend y Frontend.</p>
-          <div class="social-share">
-            <h3 class="title-posting">Comparte este post</h3>
-            <a href="#"><span><img src="../../media/img/general/telegram.png" alt="Telegram social"></span></a>
-            <a href="#"><span><img src="../../media/img/general/youtube.png" alt="Telegram social"></span></a>
-            <a href="#"><span><img src="../../media/img/general/instagram.png" alt="Telegram social"></span></a>
+      <div class="w-post">
+        <div class="data-post-autor">
+          <div class="image-author">
+            <img class="img-author" src="../../media/img/general/logo-terciario.webp" alt="Imagen del autor">
+          </div>
+          <div class="data-author">
+            <p class="data-text"><strong>Publicado por:</strong> <a href="#">Binario Assembler</a></p>
+            <p class="data-text">Programador profesional, especialista en Backend y Frontend.</p>
+            <div class="social-share">
+              <h3 class="title-posting">Comparte este post</h3>
+              <a href="#"><span><img src="../../media/img/general/telegram.png" alt="Telegram social"></span></a>
+              <a href="#"><span><img src="../../media/img/general/youtube.png" alt="Telegram social"></span></a>
+              <a href="#"><span><img src="../../media/img/general/instagram.png" alt="Telegram social"></span></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="links-themes">
-        <div class="btn-theme btn-before">
-          <a href="./06-sintaxis-basica-cpp.html"><span class="item-btn">&#171; Antes</span>Sintáxis básica de un programa en C++</a>
-        </div>
-        <div class="btn-theme btn-after">
-          <a href="#"><span class="item-btn">Siguiente &#187;</span>Keywords en C++</a>
+        <div class="links-themes">
+          <div class="btn-theme btn-before">
+            <a href="./06-sintaxis-basica-cpp.html"><span class="item-btn">&#171; Antes</span>Sintáxis básica de un programa en
+              C++</a>
+          </div>
+          <div class="btn-theme btn-after">
+            <a href="./08-keywords-cpp.html"><span class="item-btn">Siguiente &#187;</span>Keywords en C++</a>
+          </div>
         </div>
       </div>
     </section>
