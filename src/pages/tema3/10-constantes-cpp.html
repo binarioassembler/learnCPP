@@ -39,19 +39,37 @@
         <section class="subtopic">
           <h2>¿Cómo definimos constantes en C++?</h2>
           <div class="multimedia-container">
-            <img src="https://i.postimg.cc/QdLssHkQ/codebase.png" alt="Imágen de prueba" class="img-multimedia">
+            <img src="https://i.postimg.cc/y6GbLY09/3-sintaxis-constante-cpp.png" alt="Imágen de prueba" class="img-multimedia">
           </div>
           <p>Existen tres formas de definir constantes:</p>
           <ol class="list-order ol-alpha">
             <li><strong>Constante con la palabra clave <code>const</code></strong>
               <p class="text-main">La palabra clave <code>const</code> es una constante de tipado fuerte, una vez que una variable se declara como <code>'const'</code> su valor no puede ser modificado.</p>
+              <div class="multimedia-container">
+                <div class="head-input">
+                  <p><strong>Sintaxis:</strong></p>
+                </div>
+                <img class="img-multimedia" src="https://i.postimg.cc/D2BkqhpQ/3-contantes-const.png" alt="Imágen de prueba">
+              </div>
             </li>
             <li><strong>Constante con la palabra clave <code>constexpr</code></strong>
               <p class="text-main">Define expresiones constantes que pueden evaluarse en tiempo de compilación. Es usado para una mejor optimización, lo que signifca que todas las funciones y expresiones que utilizan este <strong>keyword</strong> debe ser también de tipo <code>'constexpr'</code>.</p>
+              <div class="multimedia-container">
+                <div class="head-input">
+                  <p><strong>Sintaxis:</strong></p>
+                </div>
+                <img class="img-multimedia" src="https://i.postimg.cc/sXdN3nDc/3-sintaxis-constexpr-cpp.png" alt="Imágen de prueba">
+              </div>
             </li>
             <li><strong>Constante definido por el preprocesador <code>#include</code></strong>
               <p class="text-main">Antes era común usar la directiva <code>#define</code> del preprocesador para definir constantes.</p>
               <p class="text-main">Pero este método no es recomendable, porque tiene desventajas como la falta de control de tipo y la ausencia de ámbito (scope) definido.</p>
+              <div class="multimedia-container">
+                <div class="head-input">
+                  <p><strong>Sintaxis:</strong></p>
+                </div>
+                <img class="img-multimedia" src="https://i.postimg.cc/RFdQ2G3q/3-sintaxis-define-cpp.png" alt="Imágen de prueba">
+              </div>
             </li>
           </ol>
         </section>

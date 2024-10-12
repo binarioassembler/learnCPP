@@ -32,13 +32,12 @@
   <div class="wrapper">
     <section class="content-main">
       <div class="w-main">
-        <p class="text-main">Una variable es un espacio de memoria que se usa para almacenar datos. Cada variable tiene un nombre único y un tipo de datos específico que determina el tamaño y el formato de la memoria.</p>
+        <p class="text-main">Una variable es un espacio de memoria que se usa para almacenar datos. Cada variable tiene un nombre único y un tipo de dato específico que determina el tamaño y el formato de la memoria.</p>
         <section class="subtopic">
           <h2>Características</h2>
           <ul class="list-main">
             <li>El valor de una variable se puede cambiar durante la ejecución del programa.</li>
-            <li>Una variable es solo un nombre dado a una ubicación en memoria, toda operación que vaya ha realizarse afectará la
-              ubicación de esa memoria.</li>
+            <li>Una variable es solo un nombre dado a una ubicación en memoria, toda operación que vaya ha realizarse afectará la ubicación en esa memoria.</li>
             <li>Todas las variables deben declararse antes de su uso.</li>
           </ul>
         </section>
@@ -57,8 +56,7 @@
         </section>
         <section class="subtopic">
           <h2>Inicialización de variables</h2>
-          <p class="text-main">Existen 2 formas para inciializar variables, el primero es asginando un valor inicial al momento de
-            declararla y la otra forma es declarando solo el nombre de la variable y luego inicializarlo más adelante en un
+          <p class="text-main">Existen 2 formas para inicializar variables, el primero es asignando un valor inicial al momento de declararla y la otra forma es declarando solo el nombre de la variable y luego inicializarlo más adelante en un
             determinado punto del programa.</p>
           <p><strong>Ejemplo:</strong></p>
           <div class="multimedia-container">
@@ -67,12 +65,13 @@
         </section>
         <section class="subtopic">
           <h2>Tipos de datos comunes</h2>
-          <p>En C++, existen varios tipos de datos que se pueden usar para declarar variables, las más usadas son:</p>
+          <p>En C++, existen varios tipos de datos que se pueden usar para declarar variables, las más conocidas son:</p>
           <ul class="list-main">
             <li><strong><code>int:</code></strong> son datos de tipo número entero.</li>
             <li><strong><code>float:</code></strong> son datos de tipo número de punto flotante simple.</li>
             <li><strong><code>double:</code></strong> son datos de tipo número de punto flotante de precisión doble.</li>
             <li><strong><code>char:</code></strong> son datos de tipo solo caracter.</li>
+            <li><strong><code>string:</code></strong> son datos de tipo cadena de caracteres.</li>
             <li><strong><code>bool:</code></strong> son datos de tipo booleano <em>(true o false)</em>.</li>
           </ul>
           <div class="multimedia-container">
@@ -109,8 +108,7 @@ El costo de la bebida es $9.99
             <li><strong>Variables locales</strong>
               <p class="text-main">Las variables locales son declaradas dentro de una función, que es un bloque delimitado por
                 llaves '{ }', o una estructura de control <em>(if, for, etc)</em>.</p>
-              <p>Estas variables solo son accesible dentro de su ámbito (scope) donde son declaradas. Su tiempo de vida empieza
-                cuando se ejecuta la variable y termina cuando se sale del bloque en el que fueron declaradas.</p>
+              <p>Estas variables solo son accesibles dentro de su ámbito (scope) donde son declaradas. Su tiempo de vida empieza cuando se ejecuta la variable y termina cuando se sale del bloque en el que fueron declaradas.</p>
             </li>
             <div class="multimedia-container">
               <div class="head-input">
@@ -118,7 +116,7 @@ El costo de la bebida es $9.99
               </div>
               <img class="img-multimedia" src="https://i.postimg.cc/nhgrzZJJ/2-variables-locales.png" alt="Imágen de prueba">
               <div class="head-input">
-                <p class="text-main">En este ejemplo todas la variables han sido declaradas en el <strong>scope</strong> de la función <code>main()</code>, quiere decir que todas las variables que tengamos dentro del cuerpo de <code>main()</code> solo será accedida por dicha función a eso nos referimos con variables locales.</p>
+                <p class="text-main">En este ejemplo todas la variables han sido declaradas en el <strong>scope</strong> de la función <code>main()</code>, quiere decir que todas las variables que se encuentran dentro del cuerpo de <code>main()</code> solo serán accedidas por dicha función a eso nos referimos con variables locales.</p>
                 <p class="text-main">Su tiempo de vida termina cuando la función termine de ejecutar línea por línea cada sentencia.</p>
               </div>
             </div>
@@ -162,14 +160,14 @@ Sexo: M
                   <li>El método <code><em>mostrarColor()</em></code></li>
                   <li>El método <code><em>mostrarForma()</em></code></li>
                 </ul>
-                <p class="text-main">Estos métodos nos permite imprimir por consola los valores que vamos definir a nuestros objetos al momento de instanciarlas, podemos hacer varias copias de objetos con diferentes valores en sus atributos.</p>
+                <p class="text-main">Estos métodos nos permiten imprimir por consola los valores que vamos definir a nuestros objetos al momento de instanciarlas, podemos hacer varias copias de objetos con diferentes valores en sus atributos.</p>
                 <p class="text-main">Una vez terminada nuestra plantilla de la clase Clock, debemos dar valor a los atributos y hacer el llamado a los métodos a través de la <strong>intancia</strong>, para instanciar un objeto debemos llamarlo desde la función principal <code>main()</code>.</p>
               </div>
               <img class="img-multimedia" src="https://i.postimg.cc/D7Hw129V/2-variable-instancia2.png" alt="Imágen de prueba">
               <div class="head-input">
                 <p class="text-main">En este caso creamos en nuestra función principal dos objetos uno se llama <code>dePared</code> y el otro <code>dePulsera</code> ambos son objetos instanciados de la clase Clock.</p>
-                <p class="text-main"><strong>Las variables de instancia</strong> son generadas mediante un punto (.) y son objetos que han sido instanciados de una clase padre. Para el caso del reloj <code>dePared</code> estamos instanciando después del punto sus atributos <strong>color</strong> y <strong>pendulum</strong>, de igual manera para el reloj <code>dePulsera</code> se está instanciando sus atributos <code>shape</code> y <code>sound</code>, esto nos permite tener un mejor control de datos mediante objetos.</p>
-                <p class="text-main">Lo mismo pasa cuando queremos llamar a un método la instancia sería <strong><em>objeto.método()</em></strong>, en este caso le pedimos al programa, que el reloj <code>dePared</code> ejecute el método <em>mostrarColor()</em> y el reloj <code>dePulsera</code> ejecute el método <em>mostrarForma()</em>, para al final tener el siguiente resultado por consola.</p>
+                <p class="text-main"><strong>Las variables de instancia</strong> son generadas mediante un punto (.) y son objetos que han sido instanciados de una clase padre. Para el caso del reloj <code>dePared</code> estamos instanciando después del punto sus atributos <strong>color</strong> y <strong>pendulum</strong>, de igual manera para el reloj <code>dePulsera</code> se está instanciando sus atributos <code>shape</code> y <code>sound</code>, esto nos permite tener un mejor control de datos mediante objetos y hace que nuestro código no sea redundante.</p>
+                <p class="text-main">Lo mismo pasa cuando queremos llamar a un método la instancia sería <strong><em>objeto.método()</em></strong>, en este caso pedimos al programa, que el reloj <code>dePared</code> ejecute el método <em>mostrarColor()</em> y el reloj <code>dePulsera</code> ejecute el método <em>mostrarForma()</em>, para al final tener el siguiente resultado por consola.</p>
               </div>
             </div>
             <div class="multimedia-container">
@@ -202,7 +200,7 @@ Estado de pendulo: 7
                 este tipo de variable es compartida por todas las instancias de la clase.</p>
               <p class="text-main">Por otro lado, una variable <strong>static</strong> local dentro de una función mantiene su valor entre llamadas a funciones. Veamos un caso sencillo de una variable estática local.</p>
               <p class="text-main">Tenemos el salario de un empleado que es de 2000 USD y hay una regla en la empresa que decreta que el trabajador tendrá un aumento de salario cada 5 años. Dicho aumento se calcula con el <strong>incremento inicial</strong> del 2% y cada cinco años este incremento deberá duplicarse por lo que el aumento mantendrá su valor cada vez que se actualice a fin de que el salario del empleado vaya incrementándose cada cinco años, entonces es importante que tengamos una variable de tipo <strong>static</strong> para que el valor del incremento se mantenga al igual que el salario actual. Dicho esto, para que nuestro programa tenga una estructura organizada sería recomendable trabajar con una función aparte del <code>main()</code>, que solo se encargue de hacer el calculo del aumento de salario cada cinco años.</p>
-              <p class="text-main">Esta función la llamaremos <code><em>augment()</em></code>, dicho subproceso se encargará del trabajo pesado, mientras que cuando querramos ver el resumen del aumento de salario de un empleado cada 5 años, lo haremos llamándolo desde la función <code>main()</code>.</p>
+              <p class="text-main">Esta función la llamaremos <code><em>augment()</em></code>, dicho subproceso se encargará del trabajo pesado, cuando querramos ver el resumen del aumento de salario de un empleado cada 5 años, lo haremos llamándolo desde la función <code>main()</code>.</p>
             </li>
             <div class="multimedia-container">
               <div class="head-input">
@@ -216,7 +214,7 @@ Estado de pendulo: 7
                   <li>newSalary = 2000</li>
                   <li>year = 2000</li>
                 </ul>
-                <p class="text-main">Esto quiere decir que sus valores se mantendrá y no se reiniciarán. Entonces, dentro del cuerpo de dicha función duplicaremos la variable <code>increase</code> y le sumaremos 5 años a la variable <code>year</code>, esto hará que cada vez que hagamos un llamado a la función <code>augment()</code> sus variables locales de tipo <code>static</code> actualizarán su valor.</p>
+                <p class="text-main">Esto quiere decir que sus valores se mantendrá y no se reiniciarán. Entonces, dentro del cuerpo de dicha función duplicaremos la variable <code>increase</code> y a la variable <code>year</code> le sumaremos 5 años cada vez que invocamos la función <code><em>augment()</em></code>, para que ambos valores se actualicen.</p>
                 <p class="text-main">Hacemos el llamado tres veces a la función <code><em>augment()</em></code> para obtener el siguiente resultado.</p>
               </div>
             </div>
@@ -252,7 +250,7 @@ SALARIO ACTUAL: $2605.82
             aplicar cada una de estas características cuando se presenta un problema en específico.</p>
         </section>
         <div class="box-note" id="box-info">
-          <p class="text-note"><strong class="text-note">Importante:</strong> Acerca de los tipos de variables locales, de instancia y estáticas tendremos un apartado más detallado en las próximas lecciones.</p>
+          <p class="text-note"><strong class="text-note">Importante:</strong> Acerca de los tipos de variables locales, de instancia y estáticas tendremos un apartado más detallado en las próximas lecciones. De momento solo debes quedarte con los conceptos de las variables sus tipos y categorías.</p>
         </div>
       </div>
     </section>

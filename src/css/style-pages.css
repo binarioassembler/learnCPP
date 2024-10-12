@@ -508,6 +508,7 @@ main.main-container>div.wrapper>section.content-main>div.w-main>section.subtopic
 main.main-container>div.wrapper>section.content-main>div.w-main>section.subtopic>ol>div.multimedia-container>img.img-multimedia,
 main.main-container>div.wrapper>section.content-main>div.w-main>section.subtopic>ol>div.multimedia-container>div.head-input,
 main.main-container>div.wrapper>section.content-main>div.w-main>section.subtopic>ol>div.multimedia-container>div.output-container,
+main.main-container>div.wrapper>section.content-main>div.w-main>section.subtopic>ol.ol-alpha>li>div.multimedia-container>img.img-multimedia,
 main.main-container>div.wrapper>section.content-main>div.w-main>section.subtopic>div.multimedia-container>div.head-input,
 main.main-container>div.wrapper>section.content-main>div.w-main>section.subtopic>div.multimedia-container>div.output-container {
   max-width: 720px;
@@ -518,6 +519,7 @@ main.main-container>div.wrapper>section.content-main>div.w-main>section.subtopic
 main.main-container>div.wrapper>section.content-main>div.w-main>section.subtopic>ol>div.multimedia-container>img.img-multimedia,
 main.main-container>div.wrapper>section.content-main>div.w-main>section.subtopic>ol>div.multimedia-container>div.head-input,
 main.main-container>div.wrapper>section.content-main>div.w-main>section.subtopic>ol>div.multimedia-container>div.output-container,
+main.main-container>div.wrapper>section.content-main>div.w-main>section.subtopic>ol.ol-alpha>li>div.multimedia-container>img.img-multimedia,
 main.main-container>div.wrapper>section.content-main>div.w-main>section.subtopic>div.multimedia-container>div.head-input,
 main.main-container>div.wrapper>section.content-main>div.w-main>section.subtopic>div.multimedia-container>div.output-container {
   width: 100%;

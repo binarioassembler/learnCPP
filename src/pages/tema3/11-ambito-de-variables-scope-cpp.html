@@ -43,20 +43,125 @@
           </ul>
         </section>
         <section class="subtopic">
-          <h2 id="var-global">Variables de ámbito global</h2>
+          <h2 id="var-local">Variables de ámbito global</h2>
           <p class="text-main">Son aquellas variables que se declaran fuera de todas las funciones. Son accesibles desde cualquier parte del programa, después de haber sido declarada.</p>
+          <div class="multimedia-container">
+            <div class="head-input">
+              <p><strong>Input:</strong></p>
+            </div>
+            <img class="img-multimedia" src="https://i.postimg.cc/3wgs6ygW/3-variable-global.png" alt="Imágen de prueba">
+            <div class="head-input">
+              <p class="text-main">En este ejemplo la variable <code>number</code> se declara fuera de cualquier función, por lo que tiene un ámbito global. Esto significa que puede ser utilizada tanto en la función <code><em>varGlobal()</em></code> como en <code><em>main()</em></code>.</p>
+              <p class="text-main">Se debe tener mucho cuidado con las variables globales, porque son fáciles de modificar su valor.</p>
+            </div>
+          </div>
+          <div class="multimedia-container">
+            <div class="output-container">
+              <div class="tab-out">
+                <span class="text-tab">🔳 Output</span>
+              </div>
+              <div class="body-out">
+                <pre><code>
+Llamada 1 a la funcion varGlobal( ) | Valor: 30
+El valor inicial de number en main( ) es: 30
+Llamada 2 a la funcion varGlobal( ) | Valor: 30
+El valor modificado de number en main( ) ahora es: 100
+Llamada 3 a la funcion varGlobal( ) | Valor: 100
+                </code></pre>
+              </div>
+              <div class="foot-out">
+                <p class="text-body">Proceso exitoso!</p>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="subtopic">
           <h2 id="var-local">Variables de ámbito local</h2>
           <p class="text-main">Son aquellas que se declaran dentro de un bloque de código, como en una función que está dentro de un par de llaves '{ }'. Son accesibles dentro de ese bloque específico, una vez sale del bloque dejan de existir y su memoria se libera.</p>
+          <div class="multimedia-container">
+            <div class="head-input">
+              <p><strong>Input:</strong></p>
+            </div>
+            <img class="img-multimedia" src="https://i.postimg.cc/mD237qjV/3-variable-local.png" alt="Imágen de prueba">
+            <div class="head-input">
+              <p class="text-main">Las variables <code>name</code> y <code>age</code> se encuentran definidas dentro del cuerpo de la función <code><em>varLocal()</em></code>, por lo que solo es accesible para dicha función cuando es invocada.</p>
+              <p class="text-main">Si queremos acceder desde la función principal de forma directa, el compilador encontrará un error de <strong>scope</strong>, puesto que las variables <code>name</code> y <code>age</code> no se encuentran dentro del ámbito de la función <code>main()</code>. El único modo para que la función principal pueda acceder a las variables es llamando a la función <code><em>varLocal()</em></code>.</p>
+            </div>
+          </div>
+          <div class="multimedia-container">
+            <div class="output-container">
+              <div class="tab-out">
+                <span class="text-tab">🔳 Output</span>
+              </div>
+              <div class="body-out">
+                <pre><code>
+Gabriel tiene 20 años
+                </code></pre>
+              </div>
+              <div class="foot-out">
+                <p class="text-body">Proceso exitoso!</p>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="subtopic">
           <h2 id="var-bloque">Variables de ámbito de bloque</h2>
           <p class="text-main">Es una extensión de la variable de ámbito local, puede aplicarse de cualquier par de llaves '{ }', incluyendo bloques internos dentro de funciones.</p>
+          <div class="multimedia-container">
+            <div class="head-input">
+              <p><strong>Input:</strong></p>
+            </div>
+            <img class="img-multimedia" src="https://i.postimg.cc/B6BSf7GW/3-variable-bloque.png" alt="Imágen de prueba">
+            <div class="head-input">
+              <p class="text-main">La variable <code>name</code> está ubicado en el ámbito de un estructura condiconal <code class="keywords">if</code>, esto quiere decir que su valor solo será visible dentro de la condicional mas no será accesible para la función principal.</p>
+              <p class="text-main">Si se quiere acceder directamente del <code>main()</code>, el compilador mostrará un error de <strong>scope</strong>.</p>
+            </div>
+          </div>
+          <div class="multimedia-container">
+            <div class="output-container">
+              <div class="tab-out">
+                <span class="text-tab">🔳 Output</span>
+              </div>
+              <div class="body-out">
+                <pre><code>
+Bienvenido Jamie
+                </code></pre>
+              </div>
+              <div class="foot-out">
+                <p class="text-body">Proceso exitoso!</p>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="subtopic">
           <h2 id="var-funcion">Variables de ámbito de función</h2>
-          <p class="text-main">Estas variables son declaradas dentro de una función. Dichas variables son locales a esa función y no son accesibles para otras funciones.</p>
+          <p class="text-main">Estas variables son declaradas dentro de una función y puede recibir parámetros. Dichas variables son locales a esa función y no son accesibles para otras funciones.</p>
+          <div class="multimedia-container">
+            <div class="head-input">
+              <p><strong>Input:</strong></p>
+            </div>
+            <img class="img-multimedia" src="https://i.postimg.cc/fLncryM2/3-variable-funcion.png" alt="Imágen de prueba">
+            <div class="head-input">
+              <p class="text-main">Tenemos la función <code><em>add()</em></code> que recibe dos parámetros de tipo <code class="keywrods">int</code> que son <code>a</code> y <code>b</code>, estos parámetros son variables que tienen un alcance solo a dicha función.</p>
+              <p class="text-main">La función <code><em>main()</em></code> invoca <code><em>add()</em></code> pasándo los valores de 5 y 3 (estos valores son asignados para a y b respectivamente), una vez llamada a la función <code><em>add()</em></code> esta se encarga de realizar una operación de suma y luego debe imprimir el resultado de la suma de los dos argumentos ingresados. Esto quiere decir que solo la función <code><em>add()</em></code> se encarga de trabajar con las variables y a la vez de procesar el resultado, mientras que la función principal solo hace el llamado.</p>
+              <p class="text-main">Si en la función <code><em>main()</em></code> directamente intentamos sumar los valores de <code>a</code> y <code>b</code>, el compilador mostrará un mensaje de error de <strong>scope</strong>, debido a que <code>a</code> y <code>b</code> son variables que tienen un lazo directo solo con la función <code><em>add()</em></code>.</p>
+            </div>
+          </div>
+          <div class="multimedia-container">
+            <div class="output-container">
+              <div class="tab-out">
+                <span class="text-tab">🔳 Output</span>
+              </div>
+              <div class="body-out">
+                <pre><code>
+La suma es: 8
+                </code></pre>
+              </div>
+              <div class="foot-out">
+                <p class="text-body">Proceso exitoso!</p>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="subtopic">
           <p class="text-main">El <strong>scope</strong> o alcance de las variables, es esencial para escribir programas correctos y eficientes en C++, permite gestionar la visibilidad y el tiempo de vida de nuestras variables, previniendo errores comunes y manteniendo una mejor organización en el código.</p>
