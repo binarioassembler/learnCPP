@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lenguaje de programación en C++</title>
+  <link rel="stylesheet" href="../../css/style-pages.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header-container">
+  <div class="wrapper">
+    <section class="header-section">
+      <div class="wrapp-head" id="box2">
+        <h1 class="title-banner">Lenguaje de programación en C++</h1>
+        <div class="data-post">
+          <p><span class="item-post">🙎‍♂️ Binario Assembler</span> <span class="item-post">📆 23/10/2024</span></p>
+          <p><span class="item-post">📁 <a href="#">Programación</a>, <a href="#">C++</a></span> <span class="item-post">⌛ 10 min de lectura</span></p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="wrapp-indice">
+    <div class="wrapper">
+      <p class="text-indice"><strong>&#9658; Introducción:</strong> Lenguaje de programación en C++</p>
+    </div>
+  </section>
+</header>
+<main class="main-container">
+  <div class="wrapper">
+    <section class="content-main">
+      <div class="w-main">
+        <section class="subtopic">
+          <p class="text-main">C++ es uno de los lenguajes de programación más influyentes y versátiles en la industria del software. Nació en los años
+          80 como una extensión del lenguaje C, añadiendo características de programación orientada a objetos (OOP). Este lenguaje es ampliamente utilizado en el desarrollo de sistemas operativos, videojuegos, motores gráficos, software embebido y aplicaciones de alto rendimiento.</p>
+          <p class="text-main">En este artículo, exploraremos los conceptos clave de C++, desde su estructura básica hasta las características más avanzadas, proporcionando una sólida introducción para quienes desean adentrarse en este poderoso lenguaje.</p>
+          <h2>Historia y evolución</h2>
+          <p class="text-main">C++ fue creado por Bjarne Stroustrup en 1979, mientras trabajaba en su doctorado en la Universidad de Cambridge. El
+          objetivo de Stroustrup era combinar las características de eficiencia y control de bajo nivel del lenguaje C con las
+          facilidades de abstracción y manejo de datos de los lenguajes orientados a objetos. Originalmente, C++ fue llamado "C con clases", ya que introdujo la posibilidad de definir clases, una característica fundamental de la programación orientada a objetos.</p>
+          <div class="multimedia-container">
+            <img class="img-multimedia" src="https://i.postimg.cc/MTM3NMsn/1-introduccion-bjarne.png" alt="Bjarne Stroustrup">
+          </div>
+          <p class="text-main">A lo largo de los años, C++ ha evolucionado significativamente con la introducción de nuevos estándares. Cada nueva
+          versión del lenguaje ha traído consigo mejoras en rendimiento, seguridad, capacidad de abstracción y facilidad de uso. Algunos de los hitos más importantes en la evolución de C++ son:</p>
+          <ul class="text-main list-main">
+            <li><strong>C++98:</strong> Estándar inicial que consolidó las características del lenguaje.</li>
+            <li><strong>C++11:</strong> Introducción de características como <strong>auto</strong>, <strong>lambda</strong>, <strong>smart pointers</strong> y otras mejoras que modernizaron el lenguaje.</li>
+            <li><strong>C++14, C++17, C++20:</strong> Cada uno con mejoras incrementales en expresividad y optimización, haciendo que el lenguaje sea más intuitivo y eficiente.</li>
+          </ul>
+          <h2>Conceptos básicos</h2>
+          <p><strong>Estructura base de un programa en C++</strong></p>
+          <div class="multimedia-container">
+            <img class="img-multimedia" src="https://i.postimg.cc/28m43gLb/sintaxis-cpp.png" alt="Sintaxis base de C++">
+          </div>
+          <ul class="text-main list-main">
+            <li><strong>#include:</strong> Utilizado para incluir librerías o dependencias externas. En este caso, incluimos <strong>iostream</strong>, que nos permite utilizar <code>std::cout</code> para imprimir mensajes en la consola.</li>
+            <li><strong>main():</strong> Es la función principal donde comienza la ejecución del programa. Cada programa en C++ debe tener una función <code>main</code>.</li>
+            <li><strong>std::cout:</strong> Es el objeto de salida estándar en C++ que se utiliza para mostrar texto o datos en la consola.</li>
+            <li><strong>return 0:</strong> Finaliza el programa y retorna un valor de salida. Un valor de 0 indica que el programa terminó correctamente.</li>
+          </ul>
+        </section>
+        <section class="subtopic">
+          <h2>Otros conceptos que aprenderás con C++</h2>
+          <ul class="list-main">
+            <li><strong>Tipos de datos</strong>
+              <p class="text-main">C++ ofrece una amplia gama de tipos de datos que permiten almacenar y manipular diferentes tipos de información. Los más comunes incluyen:</p>
+              <ul class="list-main">
+                <li><code>int:</code> números enteros.</li>
+                <li><code>float y double:</code> números con punto decimal.</li>
+                <li><code>char:</code> representa un caracter.</li>
+                <li><code>bool:</code> valores booleanos <em>(verdadero o falso)</em></li>
+              </ul>
+            </li>
+            <li><strong>Variables y operadores</strong>
+              <p class="text-main">Una variable es un espacio en la memoria que almacena un valor.</p>
+              <p class="text-main">C++ también proporciona una gran variedad de operadores que permiten realizar operaciones matemáticas y lógicas, como los operadores aritméticos <em>(+, -, *, /)</em>, de comparación <em>(==, !=, &lt;, &gt;)</em>, y lógicos <em>(&&, ||, !)</em>.</p>
+            </li>
+            <li><strong>Estructuras condicionales</strong>:
+              <p class="text-main">Las estructuras condicionales permiten tomar decisiones dentro de un programa. En C++, se usa <code class="keywords">if</code> para ejecutar código dependiendo de una condición.</p>
+            </li>
+            <li><strong>Bucles</strong>
+              <p class="text-main">Los bucles permiten repetir una secuencia de instrucciones varias veces. C++ ofrece tres tipos de bucles: <code class="keywords">for</code>, <code class="keywords">while</code> y <code class="keywords">do-while</code>.</p>
+            </li>
+            <li><strong>Programación orientada a objetos</strong>
+              <p class="text-main">Una de las características más poderosas de C++ es su soporte para la programación orientada a objetos. Los principios clave de este paradigma incluyen:</p>
+              <ul class="list-main">
+                <li><strong>Encapsulación:</strong> Agrupa los datos y las funciones que los manipulan en una unidad llamada clase.</li>
+                <li><strong>Herencia:</strong> Permite que una clase herede características de otra.</li>
+                <li><strong>Polimorfismo:</strong> Facilita el uso de una interfaz común para distintos tipos de datos.</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="subtopic">
+          <h2>Conclusión</h2>
+          <p class="text-main">C++ es un lenguaje extremadamente flexible y poderoso, usado en una variedad de aplicaciones, desde sistemas embebidos hasta grandes simulaciones científicas. A lo largo de este artículo, hemos cubierto los conceptos básicos que forman el núcleo del lenguaje. Sin embargo, C++ es vasto, y la verdadera maestría proviene de practicar y profundizar en temas como punteros, memoria dinámica, plantillas y el manejo de excepciones.</p>
+          <p class="text-main">En futuras entregas, exploraremos aspectos más avanzados del lenguaje, así como técnicas y buenas prácticas que te ayudarán a convertirte en un programador eficiente y eficaz en C++.</p>
+        </section>
+      </div>
+    </section>
+    <section class="about-post">
+      <div class="w-post">
+        <div class="data-post-autor">
+          <div class="image-author">
+            <img class="img-author" src="../../media/img/general/logo-terciario.webp" alt="Imagen del autor">
+          </div>
+          <div class="data-author">
+            <p class="data-text"><strong>Publicado por:</strong> <a href="#">Binario Assembler</a></p>
+            <p class="data-text">Programador profesional, especialista en Backend y Frontend.</p>
+            <div class="social-share">
+              <h3 class="title-posting">Comparte este post</h3>
+              <a href="#"><span><img src="../../media/img/general/telegram.png" alt="Telegram social"></span></a>
+              <a href="#"><span><img src="../../media/img/general/youtube.png" alt="Telegram social"></span></a>
+              <a href="#"><span><img src="../../media/img/general/instagram.png" alt="Telegram social"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="links-themes">
+          <div class="btn-theme btn-after">
+            <a href="./02-caracterisiticas-cpp.html"><span class="item-btn">Siguiente &#187;</span>Características del lenguaje</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="content-extra">
+    <div class="wrapper-extra">
+      <div class="wrapp-contex">
+        <h2 class="title-extra">¡Este verano estudia con nosotros!</h2>
+        <p class="text-extra">Te enviaremos publicaciones con consejos útiles y múltiples recursos para que sigas
+          aprendiendo.</p>
+        <div class="container-extra">
+          <a class="btn-extra" href="#">Suscríbete</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+  <footer class="footer-container">
+    <div class="foot-top">
+      <div class="foot-img">
+        <a href="../../../index.html"><img src="../../media/img/general/profile.png" alt="Logo"></a>
+      </div>
+      <div class="foot-head">
+        <p class="foot-text">En BA nos dedicamos a enseñarte tecnologías actuales de desarrollo web para ayudarte a crear
+          tus proyectos de una forma más eficiente.</p>
+      </div>
+    </div>
+    <div class="foot-center">
+      <a class="btn-social" href="#"><img src="../../media/img/general/telegram.png" alt="Social Media"></a>
+      <a class="btn-social" href="#"><img src="../../media/img/general/instagram.png" alt="Social Media"></a>
+      <a class="btn-social" href="#"><img src="../../media/img/general/tiktok.png" alt="Social Media"></a>
+      <a class="btn-social" href="#"><img src="../../media/img/general/twitter.png" alt="Social Media"></a>
+      <a class="btn-social" href="#"><img src="../../media/img/general/youtube.png" alt="Social Media"></a>
+    </div>
+    <div class="foot-bottom">
+      <div class="wrapp-legal">
+        <h4 class="foot-title">BinarioAssembler <img src="../../media/img/general/logo-terciario.webp" alt="Logo">
+          Derechos reservados 2024</h4>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
